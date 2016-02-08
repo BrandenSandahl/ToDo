@@ -31,6 +31,7 @@ public class ToDo {
                     int itemNum = Integer.valueOf(scanner.nextLine());
                     ToDoItem item = items.get(itemNum - 1);
                     item.setDone(!item.isDone());
+                    break;
 
 
                 case "3":
