@@ -37,11 +37,11 @@ public class ToDo {
                 case "3":
                     int g = 1;
                     for (ToDoItem i : items) {
-                        String checkBox = "[ ] ";
+                        String checkBox = "[ ]";
                         if (i.isDone()) {
-                            checkBox = "[x] ";
+                            checkBox = "[x]";
                         }
-                        System.out.println(checkBox + g + ". " + i.getText());
+                        System.out.printf("%s %d. %s\n", checkBox, g, i.getText());
                         g++;
                     }
                     System.out.println("");
