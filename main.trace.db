@@ -1,0 +1,6 @@
+03-01 10:34:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TODOS (ID IDENTITY, TEXT VARCHAR, IS_DONE BOOLEAN "; expected "(, FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS todos (id IDENTITY, text VARCHAR, is_done BOOLEAN [42001-176]
+03-01 10:37:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "UPDATE TODOS IS_DONE =[*] NOT IS_DONE WHERE ID = ?  "; expected "SET"; SQL statement:
+UPDATE todos is_done = NOT is_done WHERE id = ?  [42001-176]

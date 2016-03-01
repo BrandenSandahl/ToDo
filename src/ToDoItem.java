@@ -7,10 +7,12 @@ public class ToDoItem {
 // Set up Vars
     private String text;
     private boolean isDone;
+    private int id;
 
 
 // Constructors if used
-    public ToDoItem(String text, boolean isDone) {
+    public ToDoItem(int id, String text, boolean isDone) {
+        setId(id);
         setText(text);
         setDone(isDone);
     }
@@ -30,6 +32,14 @@ public class ToDoItem {
 
     public void setDone(boolean done) {
         isDone = done;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     /** End of Getters and Setters */
